@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1524665368 source:c:\users\nokia\desktop\c++\mystring\main.cpp
+	<iostream>
+	<conio.h>
+	<string.h>
+	<string>
+
+1524670269 source:c:\users\nokia\desktop\c++\vladcatalin\main.cpp
+	<iostream>
+	<conio.h>
+	<string.h>
+	<string>
+	<utility>
+

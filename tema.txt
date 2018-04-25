@@ -1,0 +1,61 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+class sir
+{
+private:
+	std::string s;
+public:
+	sir()
+	{
+		s = '0';
+	}
+
+	sir(std::string s1)
+	{
+		s = s1;
+	}
+
+	int get_number_of_digits()
+	{
+		int i, number = 0;
+		for (i = 0; s[i] != NULL; i++)
+		{
+			if (s[i] >= '0' && s[i] <= '9')
+				number++;
+		}
+		
+		return number;
+	}
+
+	int get_number_of_letters()
+	{
+		int i, number = 0;
+		for (i = 0; s[i] != NULL; i++)
+		{
+			if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
+				number++;
+		}
+		
+		return number;
+	}
+	
+};
+
+
+int main()
+{
+	int opt, litere, cifre;
+	std::string s;
+	std::cout << "dati sirul" << std::endl;
+	std::getline(std::cin, s);
+	sir sir1 = sir(s);
+	cifre = sir1.get_number_of_digits();
+	litere = sir1.get_number_of_letters();
+	std::cout << "numarul de cifre este: " << cifre << std::endl;
+	std::cout << "numarul de litere este: " << litere << std::endl;
+	_getch();
+	return 0;
+}

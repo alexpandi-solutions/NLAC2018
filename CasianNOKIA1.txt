@@ -1,0 +1,40 @@
+class Stringuri
+{
+	std::string sir;
+	int cif=0;
+	int lit=0;
+	int i=0,j=0;
+	int n;
+	int m=cifre.length();
+	std::string x;
+	std::string cifre="0123456789";
+	public:
+	void Set(std::string s)
+	{
+		sir=s;
+		n=sir.length();
+		//std::cout<<n;
+	}
+	void Cif()
+	{
+		//std::cout<<sir;
+		for(i=0;i<n;i++)
+            		for(j=0;j<m;j++)
+                		if(cifre[j]==sir[i])
+                    			cif++;
+                		else
+                    			lit++;
+        std::cout<<"In sirul introdus sunt:"<<cif<<"cifre"<<"si"<<lit<<"litere\n";
+	}
+};
+int main()
+{
+    std::string sirul;
+    std::cout<< "Introduceti sirul:\n";
+    std::cin>>sirul;
+    std::cout<<sirul;
+    Stringuri st;
+    st.Set(sirul);
+    st.Cif();
+    return 0;
+}

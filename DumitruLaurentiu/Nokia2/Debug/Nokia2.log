@@ -1,0 +1,4 @@
+﻿  Nokia2.cpp
+c:\users\nokia\source\repos\nokia2\nokia2\nokia2.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\nokia\source\repos\nokia2\nokia2\nokia2.cpp(40): warning C4018: '<': signed/unsigned mismatch
+  Nokia2.vcxproj -> C:\Users\Nokia\source\repos\Nokia2\Debug\Nokia2.exe
